@@ -15,10 +15,10 @@ Connects to the Griddo Atlas MCP server, giving you access to:
 
 ```bash
 # Add the Griddo marketplace
-/plugin marketplace add griddo/atlas-marketplace
+/plugin marketplace add griddo/griddo-partners-claude-marketplace
 
 # Install the plugin
-/plugin install university-atlas@griddo-atlas
+/plugin install university-atlas@griddo-claude-marketplace
 ```
 
 On first use, your browser will open for authentication via Griddo Atlas.

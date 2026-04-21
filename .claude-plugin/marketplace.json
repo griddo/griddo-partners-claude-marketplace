@@ -1,5 +1,6 @@
 {
   "name": "griddo-claude-marketplace",
+  "version": "1.0.0",
   "description": "Griddo Partner tools for university data intelligence",
   "owner": {
     "name": "Griddo",

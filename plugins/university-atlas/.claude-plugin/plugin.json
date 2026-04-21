@@ -8,7 +8,7 @@
     "url": "https://griddo.io/partners"
   },
   "homepage": "https://griddo.io",
-  "repository": "https://github.com/griddo/atlas-marketplace",
+  "repository": "https://github.com/griddo/griddo-partners-claude-marketplace",
   "license": "MIT",
   "keywords": ["university", "edtech", "enrichment", "crm", "mcp", "data", "higher-education"]
 }
