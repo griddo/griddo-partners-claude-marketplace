@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "university-atlas",
-      "source": "./plugins/university-atlas",
+      "source": "./university-atlas",
       "description": "Search, enrich, and analyze university data via Griddo Atlas MCP",
       "version": "1.0.0",
       "category": "data",
