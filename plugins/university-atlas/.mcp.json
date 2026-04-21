@@ -1,0 +1,6 @@
+{
+  "university-atlas": {
+    "type": "http",
+    "url": "https://api.atlas.griddo.io/mcp/"
+  }
+}

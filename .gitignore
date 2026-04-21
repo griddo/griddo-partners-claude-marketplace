@@ -1,0 +1,77 @@
+# Cache directory (ephemeral data)
+.cache/*
+!.cache/.gitkeep
+
+# Logs directory (operational logs)
+logs/*.log
+logs/*.jsonl
+logs/*/*.log
+!logs/.gitkeep
+!logs/**/.gitkeep
+
+# Individual log files
+*.log
+
+# Temporary and progress files
+progress.json
+*.tmp
+*.temp
+
+# Large data files
+*.crawl
+*.serp
+
+# Crawlee runtime data
+storage/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+!.claude/scripts/lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.uv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Claude Code internal cache
+.claude/.cache/
+
+

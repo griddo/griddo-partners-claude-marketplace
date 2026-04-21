@@ -1,0 +1,19 @@
+{
+  "name": "griddo-claude-marketplace",
+  "description": "Griddo Partner tools for university data intelligence",
+  "owner": {
+    "name": "Griddo",
+    "email": "daniel.serrano@griddo.io"
+  },
+  "plugins": [
+    {
+      "name": "university-atlas",
+      "source": "./plugins/university-atlas",
+      "description": "Search, enrich, and analyze university data via Griddo Atlas MCP",
+      "version": "1.0.0",
+      "category": "data",
+      "author": { "name": "Griddo" },
+      "homepage": "https://griddo.io/partners"
+    }
+  ]
+}
