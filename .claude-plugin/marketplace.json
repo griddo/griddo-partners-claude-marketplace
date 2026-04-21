@@ -1,6 +1,6 @@
 {
   "name": "griddo-claude-marketplace",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Griddo Partner tools for university data intelligence",
   "owner": {
     "name": "Griddo",
@@ -11,9 +11,11 @@
       "name": "university-atlas",
       "source": "./university-atlas",
       "description": "Search, enrich, and analyze university data via Griddo Atlas MCP",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "data",
-      "author": { "name": "Griddo" },
+      "author": {
+        "name": "Griddo"
+      },
       "homepage": "https://griddo.io/partners"
     }
   ]

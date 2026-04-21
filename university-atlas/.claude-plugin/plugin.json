@@ -1,6 +1,6 @@
 {
   "name": "university-atlas",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Search, enrich, and analyze university data. Access technology stacks, web performance (CrUX), academic data, and BI reports for 150+ universities via Griddo Atlas.",
   "author": {
     "name": "Griddo",
@@ -10,5 +10,13 @@
   "homepage": "https://griddo.io",
   "repository": "https://github.com/griddo/griddo-partners-claude-marketplace",
   "license": "MIT",
-  "keywords": ["university", "edtech", "enrichment", "crm", "mcp", "data", "higher-education"]
+  "keywords": [
+    "university",
+    "edtech",
+    "enrichment",
+    "crm",
+    "mcp",
+    "data",
+    "higher-education"
+  ]
 }

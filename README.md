@@ -1,6 +1,6 @@
 # Griddo Partners Marketplace
 
-> Marketplace v1.0.0
+> Marketplace v1.0.1
 
 Claude Code plugins for university data intelligence at Griddo partner universities.
 
@@ -18,4 +18,4 @@ Claude Code plugins for university data intelligence at Griddo partner universit
 
 | Plugin | Description | Version | Docs |
 |--------|-------------|---------|------|
-| [university-atlas](plugins/university-atlas/) | Search, enrich, and analyze university data via Griddo Atlas MCP | 1.0.0 | [README](plugins/university-atlas/README.md) |
+| [university-atlas](university-atlas/) | Search, enrich, and analyze university data via Griddo Atlas MCP | 1.0.1 | [README](university-atlas/README.md) |
