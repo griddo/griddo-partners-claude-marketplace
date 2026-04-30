@@ -1,6 +1,6 @@
 {
   "name": "university-atlas",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Search, enrich, and analyze university data. Access technology stacks, web performance (CrUX), academic data, and BI reports for 150+ universities via Griddo Atlas.",
   "author": {
     "name": "Griddo",
