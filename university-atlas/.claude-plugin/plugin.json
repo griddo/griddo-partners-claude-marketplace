@@ -1,7 +1,7 @@
 {
   "name": "university-atlas",
-  "version": "1.0.1",
-  "description": "Search, enrich, and analyze university data. Access technology stacks, web performance (CrUX), academic data, and BI reports for 150+ universities via Griddo Atlas.",
+  "version": "1.3.0",
+  "description": "Search, enrich, and analyze university data. Access technology stacks, web performance (CrUX), academic data, and draft persistable BI reports for universities via Griddo Atlas.",
   "author": {
     "name": "Griddo",
     "email": "daniel.serrano@griddo.io",
@@ -14,9 +14,9 @@
     "university",
     "edtech",
     "enrichment",
-    "crm",
     "mcp",
     "data",
-    "higher-education"
+    "higher-education",
+    "bi-report"
   ]
 }
