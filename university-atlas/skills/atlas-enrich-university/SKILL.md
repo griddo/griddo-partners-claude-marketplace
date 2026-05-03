@@ -22,7 +22,11 @@ Use the university-atlas MCP tools to enrich university data with external sourc
 
 ## Available enrichment services
 
-`ror`, `urlscan`, `whatcms`, `eolife`, `crux`, `hibp`, `wikipedia`, `wikidata`, `crtsh`, `dnsdumpster`, `page_count`
+`ror`, `urlscan`, `whatcms`, `eolife`, `crux`, `hibp`, `wikipedia`, `wikidata`, `apollo`, `dataforseo`, `crtsh`, `dnsdumpster`, `page_count`
+
+These are values you can pass in the `services` array of `enrich_university` to scope a
+run to specific data sources. Omitting the parameter runs the full enrichment pipeline,
+which is what you usually want — the richer the input, the sharper the BI report.
 
 ## BI Reports
 
