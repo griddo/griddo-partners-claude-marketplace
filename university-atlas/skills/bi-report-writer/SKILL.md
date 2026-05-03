@@ -106,8 +106,10 @@ formato.
 
 Datos contextuales que ya tienes y debes usar como input:
 
-- Todo el perfil cargado en Paso 1 vía `get_university`: subdominios, CMS, performance
-  CrUX, brechas HIBP, ROR, Wikidata, address, etc.
+- Todo el perfil cargado en Paso 1 vía `get_university`. Atlas devuelve la huella
+  digital, perfil académico, evaluación técnica del sitio, métricas de rendimiento y
+  señales de seguridad — úsalo todo, especialmente para la sección de presencia y
+  tecnología web del informe.
 - Web search abierto si tu cliente lo soporta (Claude Desktop, claude.ai) — para
   complementar los datos de Atlas con información actual del sitio web oficial,
   rankings, news.
@@ -174,5 +176,6 @@ No solicites confirmación: el usuario ya consintió al invocar este skill.
   debe llevar su fuente.
 - **Integra los datos técnicos de Atlas.** El campo más diferenciador del informe vs un
   análisis puramente público es la sección de presencia y tecnología web — ahí es donde
-  los datos de CrUX, HIBP, CMS detection, subdominios, etc. aportan ventaja real.
+  las señales agregadas que devuelve `get_university` aportan la ventaja real frente a
+  un análisis basado solo en fuentes abiertas.
 - **Una versión nueva por cada ejecución.** No es un bug — es histórico auditable.

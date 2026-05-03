@@ -12,11 +12,11 @@ Use the university-atlas MCP tools to search and retrieve university data.
 
 ## Available data in a university profile
 
-- **Basic info**: Name, acronym, country, city, type, founding year
-- **Technology**: CMS platform, hosting, subdomains, security (SSL, HIBP breaches)
-- **Web performance**: CrUX Core Web Vitals (LCP, CLS, INP) with form factor breakdown
-- **Academic**: ROR data, Wikidata, Wikipedia, student/staff counts
-- **Digital presence**: Website, LinkedIn, social media
+- **Identity**: Name, acronym, country, city, type, founding year
+- **Digital footprint**: Website, LinkedIn, social media, subdomain map
+- **Technology assessment**: CMS platform, hosting, plus security and connection signals
+- **Web performance**: real-user Core Web Vitals (loading, interactivity, layout stability) with mobile/desktop breakdown
+- **Academic profile**: official identifiers, student and staff counts, where available
 - **BI Report** (when available): retrievable via `get_report(university_id)` — full strategic analysis
 
 ## Example
