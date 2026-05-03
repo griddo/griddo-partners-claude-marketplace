@@ -1,9 +1,6 @@
 {
   "university-atlas": {
     "type": "http",
-    "url": "https://api.atlas.griddo.io/mcp/",
-    "headers": {
-      "Authorization": "Bearer ${UNIVERSITY_ATLAS_API_KEY}"
-    }
+    "url": "https://api.atlas.griddo.io/mcp/"
   }
 }
