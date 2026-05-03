@@ -1,5 +1,5 @@
 ---
-name: search-university
+name: atlas-search-university
 description: Search and retrieve university data from Griddo Atlas. Use when the user asks about a university, wants to find institutions by name, or needs university profiles.
 ---
 
@@ -17,7 +17,7 @@ Use the university-atlas MCP tools to search and retrieve university data.
 - **Web performance**: CrUX Core Web Vitals (LCP, CLS, INP) with form factor breakdown
 - **Academic**: ROR data, Wikidata, Wikipedia, student/staff counts
 - **Digital presence**: Website, LinkedIn, social media
-- **CRM**: Pipedrive linkage, labels, owner
+- **BI Report** (when available): retrievable via `get_report(university_id)` — full strategic analysis
 
 ## Example
 

@@ -1,6 +1,6 @@
 {
-  "name": "griddo-claude-marketplace",
-  "version": "1.1.0",
+  "name": "griddo-partners-claude-marketplace",
+  "version": "1.2.0",
   "description": "Griddo Partner tools for university data intelligence",
   "owner": {
     "name": "Griddo",
@@ -10,8 +10,8 @@
     {
       "name": "university-atlas",
       "source": "./university-atlas",
-      "description": "Search, enrich, and analyze university data via Griddo Atlas MCP",
-      "version": "1.1.0",
+      "description": "Search, enrich, and analyze university data via Griddo Atlas MCP. Includes the bi-report-writer skill that drafts and persists Business Intelligence reports.",
+      "version": "1.2.0",
       "category": "data",
       "author": {
         "name": "Griddo"

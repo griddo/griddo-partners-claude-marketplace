@@ -6,10 +6,13 @@ Search, enrich, and analyze university data via Griddo Atlas.
 
 Connects to the Griddo Atlas MCP server, giving you access to:
 
-- **Search** 150+ universities across database, CRM, and academic registries
+- **Search** 150+ universities across database and academic registries
 - **Enrich** universities with technology stacks, web performance, academic data
 - **Import** batches of universities from lists or CSV
 - **Read** BI reports with strategic recommendations
+- **Draft & persist** new BI reports — the `bi-report-writer` skill orchestrates the
+  full flow (resolve → fetch canonical prompt → research → save) so the report lives
+  in Atlas and is retrievable by everyone with access to that university
 
 ## Installation
 
@@ -49,12 +52,22 @@ flow, no OAuth, no manual token refresh.
 
 | Tool | Description |
 |------|-------------|
-| `search_universities` | Search by name or CRM ID |
+| `search_universities` | Search by name or universal ID |
 | `get_university` | Get full university profile |
 | `enrich_university` | Trigger enrichment for a university |
 | `batch_import` | Import and enrich multiple universities |
 | `get_job_status` | Track enrichment progress |
-| `get_report` | Get latest BI report |
+| `get_report` | Get latest BI report (read) |
+| `get_report_template` | Fetch the canonical BI report prompt + validation contract (used by `bi-report-writer`) |
+| `save_report` | Persist a freshly-drafted BI report (used by `bi-report-writer`) |
+
+## Skills
+
+| Skill | Description |
+|------|-------------|
+| `atlas-search-university` | Search and retrieve university data |
+| `atlas-enrich-university` | Trigger enrichment for one or many universities |
+| `bi-report-writer` | Draft a comprehensive BI report on a university and persist it to Atlas |
 
 ## Authentication
 
