@@ -7,9 +7,12 @@ description: Bump plugin and marketplace versions, update README, sync marketpla
 
 Detects changed plugins and marketplace-level changes since the last release, bumps their versions independently, updates README.md, syncs marketplace.json, commits, pushes, and creates a PR.
 
+Supports both flat (`PLUGIN_NAME/`) and nested (`plugins/PLUGIN_NAME/`) plugin layouts. The plugin's directory is read from `source` in `marketplace.json`; the `name` field is used only for identifying the plugin in marketplace.json and in commit messages.
+
 ## Available scripts
 
 - **`scripts/release.sh`** — Validates branch, detects changes, bumps versions in JSON files, outputs structured JSON. Run with `--help` for details.
+- **`scripts/scan-secrets.sh`** — Scans tracked files for likely exposed credentials. Invoked by `release.sh` as a pre-release gate; can also be run standalone. Run with `--help` for details.
 
 ## Usage
 
@@ -32,11 +35,11 @@ bash .claude/skills/release/scripts/release.sh $ARGUMENTS
 ```
 
 Parse the JSON output. Handle by `status` field:
-- `"error"`: Print the `error` message and STOP.
+- `"error"`: Print the `error` message and STOP. If the payload includes a `findings` array (credential scan), list each finding (`file:line [pattern] match_preview`) and tell the user to redact the values with `[REDACTED]` before re-running, or to pass `--skip-secret-scan` if the matches are confirmed false positives.
 - `"no_changes"`: Print the `message` and STOP.
 - `"ok"`: Save all fields and continue.
 
-The JSON contains: `branch`, `bump_type`, `plugins` (array with name/old_version/new_version/file), `marketplace` (changed/old_version/new_version), `files_modified`, `commit_message`, `commits_since_baseline`.
+The JSON contains: `branch`, `bump_type`, `plugins` (array with `name`/`path`/`old_version`/`new_version`/`file`), `marketplace` (changed/old_version/new_version), `files_modified`, `commit_message`, `commits_since_baseline`.
 
 ### Step 2: Update README.md
 
@@ -46,10 +49,11 @@ Use the Read tool to read `README.md`.
 
 For each plugin in the `plugins` array:
 - If a row for `[PLUGIN_NAME]` exists in the Available Plugins table, use the Edit tool to replace `old_version` with `new_version` in that row.
-- If no row exists (new plugin), read its description from marketplace.json and use the Edit tool to add a new row:
+- If no row exists (new plugin), read its description from marketplace.json and use the Edit tool to add a new row. Use the plugin's `path` (from the JSON output) for links, NOT its `name`:
   ```
-  | [PLUGIN_NAME](PLUGIN_NAME/) | DESCRIPTION | NEW_VERSION | [README](PLUGIN_NAME/README.md) |
+  | **PLUGIN_NAME** | DESCRIPTION | NEW_VERSION |
   ```
+  If the README table includes a README column, append `| [README](PATH/README.md) |` using the `path` field.
 
 #### 2b. Update marketplace version
 
